@@ -7,7 +7,7 @@ export default React => (props) => {
 
   const doAlert = (e) => {
     e.preventDefault();
-	console.log(e);
+    console.log(e);
   };
 
   return <div>

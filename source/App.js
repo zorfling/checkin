@@ -15,7 +15,8 @@ export default React => ({ ...props }) => {
       author: 'Chris M',
       text: 'The best stuff'
     }
-  ]
+  ];
+
   return (<div>
     Content goes here: { props.foo }
     <CommentBox data={data}></CommentBox>
