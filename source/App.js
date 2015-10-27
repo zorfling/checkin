@@ -1,9 +1,9 @@
-import React from 'react';
-import createTitle from './title/index';
-const Title = createTitle(React);
+import createCommentBox from './commentbox/commentbox';
 
-export default React => ({ ...props }) => (
-    <div>
-        Content goes here: { props.foo }
-        <Title { ...props}></Title>
-    </div>);
+export default React => ({ ...props }) => {
+  const CommentBox = createCommentBox(React);
+  return (<div>
+    Content goes here: { props.foo }
+    <CommentBox></CommentBox>
+  </div>);
+};
